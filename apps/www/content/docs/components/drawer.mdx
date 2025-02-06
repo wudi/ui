@@ -1,12 +1,12 @@
 ---
 title: Drawer
-description: An drawer component for React.
+description: A drawer component for React.
 component: true
 links:
   doc: https://github.com/emilkowalski/vaul
 ---
 
-<ComponentPreview name="drawer-demo" />
+<ComponentPreview name="drawer-demo" description="A drawer component." />
 
 ## About
 
@@ -23,7 +23,7 @@ Drawer is built on top of [Vaul](https://github.com/emilkowalski/vaul) by [emilk
 <TabsContent value="cli">
 
 ```bash
-npx shadcn-ui@latest add drawer
+npx shadcn@latest add drawer
 ```
 
 </TabsContent>
@@ -58,6 +58,7 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerDescription,
+  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -69,7 +70,7 @@ import {
   <DrawerTrigger>Open</DrawerTrigger>
   <DrawerContent>
     <DrawerHeader>
-      <DrawerTitle>Are you sure absolutely sure?</DrawerTitle>
+      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
       <DrawerDescription>This action cannot be undone.</DrawerDescription>
     </DrawerHeader>
     <DrawerFooter>

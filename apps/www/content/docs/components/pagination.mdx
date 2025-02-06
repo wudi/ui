@@ -4,7 +4,10 @@ description: Pagination with page navigation, next and previous links.
 component: true
 ---
 
-<ComponentPreview name="pagination-demo" />
+<ComponentPreview
+  name="pagination-demo"
+  description="A pagination with previous and next links."
+/>
 
 ## Installation
 
@@ -17,7 +20,7 @@ component: true
 <TabsContent value="cli">
 
 ```bash
-npx shadcn-ui@latest add pagination
+npx shadcn@latest add pagination
 ```
 
 </TabsContent>
@@ -49,7 +52,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/components/ui/resizable"
+} from "@/components/ui/pagination"
 ```
 
 ```tsx
@@ -78,7 +81,7 @@ By default the `<PaginationLink />` component will render an `<a />` tag.
 To use the Next.js `<Link />` component, make the following updates to `pagination.tsx`.
 
 ```diff showLineNumbers /typeof Link/ {1}
-+ import { Link } from "next/link"
++ import Link from "next/link"
 
 - type PaginationLinkProps = ... & React.ComponentProps<"a">
 + type PaginationLinkProps = ... & React.ComponentProps<typeof Link>
